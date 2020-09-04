@@ -1,0 +1,21 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="sum" ng-controller="add">
+<input type="text" ng-model="firstname"><br>
+<input type="text" ng-model="lastname"><br>
+<br><br><br>
+<h1>
+{{firstname +"  "+ lastname}}
+<h1>
+</div>
+<script>
+ var app=angular.module("sum",[]);
+ 
+ app.controller("add",function($scope){
+ $scope.firstname="";
+ $scope.lastname="";
+ })
+ </script>
+</body>
+</html>	
