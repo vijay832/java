@@ -1,0 +1,22 @@
+let a:number=10
+console.log("The value of a is "+a);
+function add(a:number,b:number){
+         return a+b;
+}
+var sum=add(30,40)
+console.log("Sum="+sum);
+
+var c:number=10
+var d:number=20
+
+if(c>d)
+console.log("c is greater than d")
+else
+console.log("d is greater than c")
+
+var i=1
+while(i<=10)
+{
+    console.log(i)
+    i++
+}
