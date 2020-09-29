@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
-        
-        <beans>
-        
-        <bean id="rahul" class="com.vijay.Student">
-        <property name="id" value="1023" />
-        <property name="name" value="rahul kumar" />
-        <property name="marks" value="545" />
-        
-        
-        </bean>
-        </beans>
+
+<beans>
+
+	<bean id="rahul" class="com.vijay.Student">
+		<property name="id" value="1023" />
+		<property name="name" value="rahul kumar" />
+		<property name="marks" value="545" />
+
+
+
+
+		<property name="course">
+			<list>
+				<value>JAVA</value>
+				<value>DEVOPS</value>
+				<value>PYTHON</value>
+				<value>ORACLE</value>
+
+			</list>
+
+		</property>
+
+		<property name="studentName">
+			<set>
+				<value>Vijay kumar</value>
+				<value>ajay kumar</value>
+				<value>pavan kumar</value>
+				<value>sudheer</value>
+
+			</set>
+
+		</property>
+
+		<property name="courseRegistration">
+			<map>
+				<entry key="vijay kumar" value="JAVA"></entry>
+				<entry key="ajay kumar" value="JAVA"></entry>
+				<entry key="pavan kumar" value="python"></entry>
+				<entry key="sudheer kumar" value="Devops"></entry>
+			</map>
+
+		</property>
+
+	</bean>
+</beans>
